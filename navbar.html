@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        background-image: url(bg.jpg);
+        -webkit-background-size:cover;
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
+        font-family: poppins;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    a{
+        text-decoration: none;
+    }
+    header{
+        display:-webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display:-o-flex;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 70px;
+
+    }
+    .logup{
+        display:-webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display:-o-flex;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4px 24px;
+        margin:20px;
+
+    }
+    .logo{
+        cursor: pointer;
+        width: 100px;
+
+    }
+    .nav-area {
+        list-style: none;
+
+    }
+    .nav-area li{
+        display:inline-block;
+        padding: 0 15px;
+        text-transform: uppercase;
+
+    }
+    .nav-area li a{
+        transition: .3s;
+        color:#fff;
+
+    }
+    .nav-area li a:hover{
+        color:red;
+    }
+    .btn,.btn-2{
+        cursor:pointer;
+        color:red;
+        font-size:18px;
+        letter-spacing: 2px;
+        border:2px solid white;
+        padding:5px;
+        border-radius: 10px;
+        margin:2px;
+        
+    }
+    .btn:hover{
+        background-color: yellow;
+    }
+    .btn-2:hover{
+        background-color: yellow;
+  }
+</style>
+<body>
+    <header>
+        <img src="logo.png" class="logo" alt="logo">
+        <nav>
+            <ul class="nav-area">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <nav class="logup">
+            <a href="#" class="btn">login</a>
+            <a href="#" class="btn-2">Sign-up</a>
+        </nav>    
+        
+    </header>
+</body>
+</html>
